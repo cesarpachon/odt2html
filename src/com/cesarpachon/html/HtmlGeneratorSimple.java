@@ -1,7 +1,7 @@
 /*
  * Created on 6/05/2010
  */
-package co.edu.virtualhumboldt.html;
+package com.cesarpachon.html;
 
 import java.io.BufferedWriter;
 import java.io.File;

@@ -1,7 +1,7 @@
 /*
  * Created on 8/03/2011
  */
-package co.edu.virtualhumboldt.openoffice;
+package com.cesarpachon.openoffice;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

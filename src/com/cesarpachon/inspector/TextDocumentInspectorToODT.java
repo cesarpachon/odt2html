@@ -1,15 +1,15 @@
 /*
  * Created on 12/03/2011
  */
-package co.edu.virtualhumboldt.inspector;
+package com.cesarpachon.inspector;
 
 import java.io.IOException;
 import java.util.Collection;
 
-import co.edu.virtualhumboldt.openoffice.textdocument.TextDocument;
-import co.edu.virtualhumboldt.openoffice.textdocument.TextGraphic;
-import co.edu.virtualhumboldt.openoffice.textdocument.TextPortion;
-import co.edu.virtualhumboldt.util.LogConsole;
+import com.cesarpachon.openoffice.textdocument.TextDocument;
+import com.cesarpachon.openoffice.textdocument.TextGraphic;
+import com.cesarpachon.openoffice.textdocument.TextPortion;
+import com.cesarpachon.util.LogConsole;
 
 import com.sun.star.graphic.XGraphic;
 import com.sun.star.style.XStyle;

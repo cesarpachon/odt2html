@@ -1,7 +1,7 @@
 /*
  * Created on 8/03/2011
  */
-package co.edu.virtualhumboldt.openoffice;
+package com.cesarpachon.openoffice;
 
 import com.sun.star.io.XInputStream;
 import com.sun.star.io.XOutputStream;

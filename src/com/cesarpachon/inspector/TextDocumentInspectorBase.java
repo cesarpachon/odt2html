@@ -1,12 +1,12 @@
 /*
  * Created on 12/03/2011
  */
-package co.edu.virtualhumboldt.inspector;
+package com.cesarpachon.inspector;
 
 import java.util.HashMap;
 import java.util.HashSet;
 
-import co.edu.virtualhumboldt.openoffice.textdocument.ITextDocumentVisitor;
+import com.cesarpachon.openoffice.textdocument.ITextDocumentVisitor;
 
 public abstract class TextDocumentInspectorBase implements ITextDocumentVisitor
 {

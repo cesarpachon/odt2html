@@ -1,22 +1,22 @@
 /*
  * Created on 6/05/2010
  */
-package co.edu.virtualhumboldt.inspector;
+package com.cesarpachon.inspector;
 
 import java.io.IOException;
 import java.util.Collection;
 import java.util.Iterator;
 
-import co.edu.virtualhumboldt.html.HtmlGeneratorPaginated;
-import co.edu.virtualhumboldt.html.HtmlGeneratorSimple;
-import co.edu.virtualhumboldt.openoffice.textdocument.TextDocument;
-import co.edu.virtualhumboldt.openoffice.textdocument.TextGraphic;
-import co.edu.virtualhumboldt.openoffice.textdocument.TextPortion;
-import co.edu.virtualhumboldt.services.RepositoryTO;
-import co.edu.virtualhumboldt.util.FileUtils;
-import co.edu.virtualhumboldt.util.LogConsole;
-import co.edu.virtualhumboldt.util.StringUtils;
-import co.edu.virtualhumboldt.yahoo.YahooWebEngine;
+import com.cesarpachon.html.HtmlGeneratorPaginated;
+import com.cesarpachon.html.HtmlGeneratorSimple;
+import com.cesarpachon.openoffice.textdocument.TextDocument;
+import com.cesarpachon.openoffice.textdocument.TextGraphic;
+import com.cesarpachon.openoffice.textdocument.TextPortion;
+import com.cesarpachon.services.RepositoryTO;
+import com.cesarpachon.util.FileUtils;
+import com.cesarpachon.util.LogConsole;
+import com.cesarpachon.util.StringUtils;
+import com.cesarpachon.yahoo.YahooWebEngine;
 
 import com.sun.star.beans.XPropertySet;
 import com.sun.star.graphic.XGraphic;

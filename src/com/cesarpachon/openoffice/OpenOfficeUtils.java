@@ -1,7 +1,7 @@
 /*
  * Created on 17/03/2011
  */
-package co.edu.virtualhumboldt.openoffice;
+package com.cesarpachon.openoffice;
 
 import com.sun.star.beans.Property;
 import com.sun.star.beans.UnknownPropertyException;

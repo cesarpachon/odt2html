@@ -1,14 +1,14 @@
 /*
  * Created on 6/05/2010
  */
-package co.edu.virtualhumboldt.html;
+package com.cesarpachon.html;
 
 import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
 
-import co.edu.virtualhumboldt.util.FileUtils;
-import co.edu.virtualhumboldt.util.StringUtils;
+import com.cesarpachon.util.FileUtils;
+import com.cesarpachon.util.StringUtils;
 import edu.co.virtualhumboldt.exception.IncompleteInformationException;
 
 

@@ -1,11 +1,11 @@
 /*
  * Created on 22/05/2010
  */
-package co.edu.virtualhumboldt.inspector;
+package com.cesarpachon.inspector;
 
 import java.io.IOException;
 
-import co.edu.virtualhumboldt.html.HtmlGenerator;
+import com.cesarpachon.html.HtmlGenerator;
 import edu.co.virtualhumboldt.exception.IncompleteInformationException;
 
 public class Image 
