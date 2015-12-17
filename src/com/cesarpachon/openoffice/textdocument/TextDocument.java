@@ -88,7 +88,9 @@ public class TextDocument extends BaseOpenOfficeDocument
 	{
 		 PropertyValue[] loadProps = new PropertyValue[0];
 		 m_xComponent = m_xComponentLoader.loadComponentFromURL(url, "_blank", 0, loadProps);
-		 
+		 if(m_xComponent == null){
+       throw new Exception("can't open given file: "+ url);
+     }
 	}
 	//-------------------------------
 	
