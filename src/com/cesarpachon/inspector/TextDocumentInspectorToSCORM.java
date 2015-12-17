@@ -110,8 +110,8 @@ public class TextDocumentInspectorToSCORM extends TextDocumentInspectorBase
 	
 	public void beginAntyPiracyInspection() throws Exception
 	{
-		m_htmlErrorReporter.writeTitle(2, "revisiÛn anti-plagios");
-		m_htmlErrorReporter.writeParagraph("los siguientes p·rrafos necesitan verificar su originalidad o que hayan sido citados adecuadamente:");
+		m_htmlErrorReporter.writeTitle(2, "revisi√≥n anti-plagios");
+		m_htmlErrorReporter.writeParagraph("los siguientes p√°rrafos necesitan verificar su originalidad o que hayan sido citados adecuadamente:");
 		m_document.visitAllPlainParagraphs(this);
 		
 	}
@@ -123,10 +123,10 @@ public class TextDocumentInspectorToSCORM extends TextDocumentInspectorBase
 		m_htmlErrorReporter.open();
 		m_htmlErrorReporter.openDiv("bloque1");
 
-		m_htmlErrorReporter.writeTitle(1, "Reporte de inspecciÛn");
+		m_htmlErrorReporter.writeTitle(1, "Reporte de inspecci√≥n");
 
 		//1. inspect general styles list
-		m_htmlErrorReporter.writeTitle(2, "1: revisiÛn de estilos usados");
+		m_htmlErrorReporter.writeTitle(2, "1: revisi√≥n de estilos usados");
 		
 		
 		m_htmlErrorReporter.writeParagraph("la lista de estilos aceptados es: ");
@@ -178,7 +178,7 @@ public class TextDocumentInspectorToSCORM extends TextDocumentInspectorBase
 			}
 			else
 			{
-				m_htmlErrorReporter.writeParagraph("<b>"+styleName+":</b> ERROR: no es un estilo v·lido.");
+				m_htmlErrorReporter.writeParagraph("<b>"+styleName+":</b> ERROR: no es un estilo v√°lido.");
 			}
 		}
 	}
@@ -207,7 +207,7 @@ public class TextDocumentInspectorToSCORM extends TextDocumentInspectorBase
 			table.dumpTableIndex(m_htmlErrorReporter);
 		}
 		
-		m_htmlErrorReporter.writeTitle(2, "Lista de Im·genes:");
+		m_htmlErrorReporter.writeTitle(2, "Lista de Im√°genes:");
 		for(Image imagen:m_images.values())
 		{
 			imagen.dumpImageIndex(m_htmlErrorReporter);
@@ -277,7 +277,7 @@ public class TextDocumentInspectorToSCORM extends TextDocumentInspectorBase
 			String charStyleName = portion.getCharStyleName();
 			
 			//discard some charStylenames..
-			if(charStyleName!= null && (charStyleName.equals("Fuente de p·rrafo predeter.") ||
+			if(charStyleName!= null && (charStyleName.equals("Fuente de p√°rrafo predeter.") ||
 					charStyleName.equals("Bullet Symbols") ||  
 					charStyleName.equals("Internet link")))
 			{
@@ -361,7 +361,7 @@ public class TextDocumentInspectorToSCORM extends TextDocumentInspectorBase
 			m_htmlContent.writeParagraph("el epigrafe tiene un numero incorrecto de campos, se esperaban 3: "+portions.size());
 			dumpParagraphHtmlContent(portions);
 			m_htmlContent.closeDiv();
-			m_htmlErrorReporter.writeParagraph("se encontrÛ una epigrafe con un n˙mero incorrecto de campos, se esperaban 3: "+portions.size());
+			m_htmlErrorReporter.writeParagraph("se encontr√≥ una epigrafe con un n√∫mero incorrecto de campos, se esperaban 3: "+portions.size());
 			for(TextPortion portion:portions)
 			{
 				m_htmlErrorReporter.writeParagraph("estilo: "+ portion.getCharStyleName()+ " contenido: "+ portion.getContent());
@@ -397,7 +397,7 @@ public class TextDocumentInspectorToSCORM extends TextDocumentInspectorBase
 				m_htmlContent.writeParagraph("el epigrafe tiene un rotulo desconocido: "+rotule);
 				dumpParagraphHtmlContent(portions);
 				m_htmlContent.closeDiv();
-				m_htmlErrorReporter.writeParagraph("se encontrÛ una epigrafe con un rotulo desconocido: "+rotule);
+				m_htmlErrorReporter.writeParagraph("se encontr√≥ una epigrafe con un rotulo desconocido: "+rotule);
 		
 			}
 			
@@ -419,7 +419,7 @@ public class TextDocumentInspectorToSCORM extends TextDocumentInspectorBase
 			m_htmlContent.writeParagraph("la tabla tiene un numero incorrecto de campos, se esperaban 3: "+portions.size());
 			dumpParagraphHtmlContent(portions);
 			m_htmlContent.closeDiv();
-			m_htmlErrorReporter.writeParagraph("se encontrÛ una tabla con un n˙mero incorrecto de campos, se esperaban 3: "+portions.size());
+			m_htmlErrorReporter.writeParagraph("se encontr√≥ una tabla con un n√∫mero incorrecto de campos, se esperaban 3: "+portions.size());
 			return;
 		}
 		
@@ -651,7 +651,7 @@ public class TextDocumentInspectorToSCORM extends TextDocumentInspectorBase
 	
 		/*
 		 * a veces, al editar un mismo documento en word y en openoffice, se duplican los estilos.
-		 * los estilos duplicados se reconocen porque se les agrega un n˙mero al final (pero cuidado!
+		 * los estilos duplicados se reconocen porque se les agrega un n√∫mero al final (pero cuidado!
 		 * hay que considerar el caso especial de Heading1, Heading2..)
 		 */
 		if(styleName != null && styleName.length()>2 && !styleName.startsWith("Heading"))
@@ -704,13 +704,13 @@ public class TextDocumentInspectorToSCORM extends TextDocumentInspectorBase
 			
 			/*
 			 * en OpenOffice, las tablas tienen estilo "table". pero en word,
-			 * quedan como estilo "epigrafe" y no son distinguibles de las im·genes.
+			 * quedan como estilo "epigrafe" y no son distinguibles de las im√°genes.
 			 */
 			if("Table".equals(styleName))
 			{
 				onTable(portions);
 			}
-			else if("EpÌgrafe".equals(styleName) || "Imagen".equals(styleName) || "Image".equals(styleName))
+			else if("Ep√≠grafe".equals(styleName) || "Imagen".equals(styleName) || "Image".equals(styleName))
 			{
 				//documento de word. puede ser una tabla o una imagen..
 				onWordTableOrImage(portions);

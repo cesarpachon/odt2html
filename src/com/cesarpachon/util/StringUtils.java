@@ -7,27 +7,27 @@ public class StringUtils {
 
 	public static String replaceHTMLQuotes(String contenido)
 	{
-		     //· &aacute; È &eacute; Ì &iacute; Û &oacute; ˙ &uacute; Ò &ntilde; 
-		     //¡ &Aacute; … &Eacute; Õ &Iacute; ” &Oacute; ⁄ &Uacute; — &Ntilde;
+		     //√° &aacute; √© &eacute; √≠ &iacute; √≥ &oacute; √∫ &uacute; √± &ntilde; 
+		     //√Å &Aacute; √â &Eacute; √ç &Iacute; √ì &Oacute; √ö &Uacute; √ë &Ntilde;
 		     //" &quot;  < &lt; > &gt;
-		     String nuevo = contenido.replaceAll("·", "&aacute;");
-		     nuevo = nuevo.replaceAll("È", "&eacute;");
-		     nuevo = nuevo.replaceAll("Ì", "&iacute;");
-		     nuevo = nuevo.replaceAll("Û", "&oacute;");
-		     nuevo = nuevo.replaceAll("˙", "&uacute;");
-		     nuevo = nuevo.replaceAll("Ò", "&ntilde;");
-		     nuevo = nuevo.replaceAll("¡", "&Aacute;");
-		     nuevo = nuevo.replaceAll("…", "&Eacute;");
-		     nuevo = nuevo.replaceAll("Õ", "&Iacute;");
-		     nuevo = nuevo.replaceAll("”", "&Oacute;");
-		     nuevo = nuevo.replaceAll("⁄", "&Uacute;");
-		     nuevo = nuevo.replaceAll("—", "&Ntilde;");
-		     nuevo = nuevo.replaceAll("¸", "&uuml;");
-		     nuevo = nuevo.replaceAll("ë", "&lsquo;");
-		     nuevo = nuevo.replaceAll("í", "&rsquo;");
-		     nuevo = nuevo.replaceAll("ì", "&rsquo;");
-		     nuevo = nuevo.replaceAll("î", "&rdquo;");
-		     nuevo = nuevo.replace("ø", "&iquest;");
+		     String nuevo = contenido.replaceAll("√°", "&aacute;");
+		     nuevo = nuevo.replaceAll("√©", "&eacute;");
+		     nuevo = nuevo.replaceAll("√≠", "&iacute;");
+		     nuevo = nuevo.replaceAll("√≥", "&oacute;");
+		     nuevo = nuevo.replaceAll("√∫", "&uacute;");
+		     nuevo = nuevo.replaceAll("√±", "&ntilde;");
+		     nuevo = nuevo.replaceAll("√Å", "&Aacute;");
+		     nuevo = nuevo.replaceAll("√â", "&Eacute;");
+		     nuevo = nuevo.replaceAll("√ç", "&Iacute;");
+		     nuevo = nuevo.replaceAll("√ì", "&Oacute;");
+		     nuevo = nuevo.replaceAll("√ö", "&Uacute;");
+		     nuevo = nuevo.replaceAll("√ë", "&Ntilde;");
+		     nuevo = nuevo.replaceAll("√º", "&uuml;");
+		     nuevo = nuevo.replaceAll("¬ë", "&lsquo;");
+		     nuevo = nuevo.replaceAll("¬í", "&rsquo;");
+		     nuevo = nuevo.replaceAll("¬ì", "&rsquo;");
+		     nuevo = nuevo.replaceAll("¬î", "&rdquo;");
+		     nuevo = nuevo.replace("¬ø", "&iquest;");
 		     
 		     
 		      

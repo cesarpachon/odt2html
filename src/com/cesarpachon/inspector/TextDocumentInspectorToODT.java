@@ -34,7 +34,7 @@ public class TextDocumentInspectorToODT extends TextDocumentInspectorBase
 	}
 	//--------------------------------------
 
-	@Override
+	nOverride
 	public void onParagraph(String styleName, Collection<TextPortion> portions)
 			throws Exception 
 	{

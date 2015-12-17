@@ -61,14 +61,14 @@ public class Title
 			if(prefix.matches("[0-9]"))
 			{
 				gen.openSpan("error");
-				gen.write("error: los titulos no deben llevar numeración manual");
+				gen.write("error: los titulos no deben llevar numeraciÃ³n manual");
 				gen.closeSpan();
 			}
 		}
 		else
 		{
 			gen.openSpan("error");
-			gen.write("error: se ha marcado un espacio vacío como título.");
+			gen.write("error: se ha marcado un espacio vacÃ­o como tÃ­tulo.");
 			gen.closeSpan();
 			
 		}

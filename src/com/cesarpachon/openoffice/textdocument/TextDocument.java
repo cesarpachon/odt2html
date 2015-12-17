@@ -343,7 +343,7 @@ public class TextDocument extends BaseOpenOfficeDocument
                  XServiceInfo.class, obj);
     	 if (xInfo.supportsService("com.sun.star.text.TextTable")) 
     	 {
-    		 	System.out.println("encontrÈ una tabla!");
+    		 	System.out.println("encontr√© una tabla!");
     		 	//pedirle a la tabla.. una interfaz para interar sobre fragmentos???
     		 	//XTextTable xTextTable = (XTextTable) UnoRuntime.queryInterface(XTextTable.class,obj);
     		 	visitAllParagraphsWithinTable(xParagraph, visitor);
@@ -1140,11 +1140,11 @@ found property: ParaTabStops of type Type[[]com.sun.star.style.TabStop]
 	/**
 	 * importantisimo! el image id es el del autoenumerado del TEXTO. es decir, el titulo donde dice 
 	 * "imagen 1", "imagen 2", "imagen 3". 
-	 * las imagenes en la version original de este codigo se buscaban por NOMBRE ("gr·ficos1", "gr·ficos2"..)
-	 * PEEEEROO.. resulta que durante la ediciÛn del documento, este nombre siempre es constante. o sea que 
-	 * es muy posible que la primera imagen "Imagen 1: bla bla", corresponda a "Gr·ficos23". 
-	 * la buena noticia es que "Gr·ficos23" aparecer· de primeras en la colecciÛn de gr·ficos. 
-	 * o sea que la soluciÛn es NO buscar por nombre, sino por posiciÛn en la colecciÛn de gr·ficos. 
+	 * las imagenes en la version original de este codigo se buscaban por NOMBRE ("gr√°ficos1", "gr√°ficos2"..)
+	 * PEEEEROO.. resulta que durante la edici√≥n del documento, este nombre siempre es constante. o sea que 
+	 * es muy posible que la primera imagen "Imagen 1: bla bla", corresponda a "Gr√°ficos23". 
+	 * la buena noticia es que "Gr√°ficos23" aparecer√° de primeras en la colecci√≥n de gr√°ficos. 
+	 * o sea que la soluci√≥n es NO buscar por nombre, sino por posici√≥n en la colecci√≥n de gr√°ficos. 
 	 */
 	public XPropertySet exportImage(int pos, String dir_path, String prefix) throws com.sun.star.uno.Exception, java.io.IOException 
 	{

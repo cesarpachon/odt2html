@@ -21,14 +21,14 @@ public abstract class TextDocumentInspectorBase implements ITextDocumentVisitor
 	}
 	
 	/**
-	 * solo estilos con nivel menor o igual a este generaràn una pagina nueva
+	 * solo estilos con nivel menor o igual a este generaran una pagina nueva
 	 */
 	protected static final int MIN_STYLE_LEVEL_CREATE_PAGE = 2;
 	
 	protected static HashMap<String, String> g_specialStylesNames = new HashMap<String, String>();
 	static
 	{
-		g_specialStylesNames.put("Epígrafe", "epigrafe");
+		g_specialStylesNames.put("Epigrafe", "epigrafe");
 	}
 	
 	
@@ -79,25 +79,25 @@ public abstract class TextDocumentInspectorBase implements ITextDocumentVisitor
 			g_validStylesNames.put("balazo", "balazo");
 			g_validStylesNames.put("comentario", "comentario");
 			
-			//listas de viñetas
-			g_validStylesNames.put("Lista de viñetas", "lista_vinetas");
+			//listas de vinetas
+			g_validStylesNames.put("Lista de vinetas", "lista_vinetas");
 			g_validStylesNames.put("Bullet Symbols", "lista_vinetas");
 			
 			//lista de numeros
 			g_validStylesNames.put("Lista de numeros", "lista_numeros");
-			g_validStylesNames.put("Lista con números", "lista_numeros");
+			g_validStylesNames.put("Lista con nÃºmeros", "lista_numeros");
 			
 			
 			//listas de contenido
 			g_validStylesNames.put("List Contents", "lista_contenidos");
-			g_validStylesNames.put("Párrafo de lista", "lista_contenidos");
+			g_validStylesNames.put("Parrafo de lista", "lista_contenidos");
 			
-			//Epígrafe
+			//EpÃ­grafe
 			//asi es como word reconoce los titulos de imagenes y tablas
-			//g_validStylesNames.put("Epígrafe", "epigrafe");
+			//g_validStylesNames.put("EpÃ­grafe", "epigrafe");
 			
 			//
-			//g_validStylesNames.put("Énfasis intenso", "bold");
+			//g_validStylesNames.put("enfasis intenso", "bold");
 						
 			//video
 			g_validStylesNames.put("enlace video", "video");
@@ -119,11 +119,11 @@ public abstract class TextDocumentInspectorBase implements ITextDocumentVisitor
 				//titulo del documento
 			g_validCharStylesNames.put("Intense Emphasis", "enfasis");
 			g_validCharStylesNames.put("Emphasis", "enfasis");
-			g_validCharStylesNames.put("Énfasis intenso", "enfasis");
-			g_validCharStylesNames.put("Énfasis sutil", "enfasis");
+			g_validCharStylesNames.put("enfasis intenso", "enfasis");
+			g_validCharStylesNames.put("enfasis sutil", "enfasis");
 			g_validCharStylesNames.put("italica", "italica");
 			
-			//g_validCharStylesNames.put("Fuente de párrafo predeter.", "cuerpo");
+			//g_validCharStylesNames.put("Fuente de parrafo predeter.", "cuerpo");
 			
 			};
 			
