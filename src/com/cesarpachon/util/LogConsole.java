@@ -3,13 +3,10 @@
  */
 package com.cesarpachon.util;
 
-import javax.swing.JTextArea;
-
 public class LogConsole 
 {
 	private static LogConsole g_instance;
 	
-	private JTextArea m_log;
 	
 	private LogConsole()
 	{
@@ -29,14 +26,10 @@ public class LogConsole
 	
 	public void log(String msg)
 	{
-		m_log.append(msg + "\n");
-		
+	 System.out.println(msg); 	
 	}
 	//---------------------
 
-	public void setTextArea(JTextArea m_log_textArea) {
-		m_log = m_log_textArea;
-	}
 	
 	
 	

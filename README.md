@@ -22,3 +22,7 @@ important! the script create variables only in a temporal way. you will need to 
 jars path: 
 /usr/lib/libreoffice/program/classes/
 
+##running
+
+./soffice.bin --headless --accept="socket,port=8100;urp;" --nologo
+
