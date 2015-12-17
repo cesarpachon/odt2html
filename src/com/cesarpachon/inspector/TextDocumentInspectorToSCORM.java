@@ -76,7 +76,7 @@ public class TextDocumentInspectorToSCORM extends TextDocumentInspectorBase
 		m_document = document;
 		m_htmlErrorReporter = new HtmlGeneratorSimple("Reporte de errores", m_repository.getErrorReportPath());
 
-		m_images_subdirectory = "\\img\\";
+		m_images_subdirectory = "/img/";
 		m_pageprefix = "content";
 		m_imageprefix = "image";
 		

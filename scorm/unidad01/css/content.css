@@ -1,0 +1,621 @@
+html{
+
+	height: 100%;	
+
+	overflow:hidden;
+}
+
+
+
+img {
+
+	border: 0;
+
+}
+
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family:Verdana, Geneva, sans-serif;
+	overflow-x:hidden;
+	overflow-y: scroll;
+	text-align:left;
+
+}
+
+
+
+/* Estructura */
+
+a:link {
+   color:#8f6316;
+   font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+   letter-spacing: 1px;
+   line-height: 1.2;
+   
+   
+}
+
+a:hover{
+    text-decoration: underline;
+	color:#F90;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	 letter-spacing: 1px;
+	 line-height: 1.2;
+}
+a:visited{
+	text-decoration: underline;
+	color:#F90;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	 letter-spacing: 1px;
+	 line-height: 1.2;
+	}
+
+.cajon {
+	width: 550px;
+	height: 574px;
+	padding-top: 15px;
+	float:left;
+}
+
+.videos {
+	width: 762px;
+	height: 580px;
+	background-image:url(images/videos.jpg);
+	background-repeat:no-repeat;
+}
+
+  .videos .coliz {
+	  float:left;
+	  width:379px;
+	  height: 580px;
+	           }
+   .videos .coliz .referencia {
+	width: 315px;
+	height: 178px;
+	margin-left: 22px;
+	margin-top: 46px;
+	            }
+
+   .videos .coliz .v2 {
+	width: 358px;
+	height: 240px;
+	margin-left: 7px;
+	margin-top: 106px;
+	           }
+			   
+			   
+   .videos .colder {
+	  float:right;
+	  width:379px;
+	  height: 580px;
+         }
+			   
+   .videos .colder .v1 {
+	width: 356px;
+	height: 255px;
+	margin-left: 14px;
+	margin-top: 32px;
+	           }
+    .videos .colder .v3 {
+	width: 356px;
+	height: 235px;
+	margin-left: 14px;
+	margin-top: 26px;
+	           }
+			   
+	.videos .colder .paginacion{
+		font-family:Verdana, Geneva, sans-serif;
+		font-size:12px;
+		height:20px;
+		float:right;
+		text-align:right;
+		margin-top:5px;
+		}
+		
+		
+.videosf {
+	width: 762px;
+	height: 580px;
+	background-image:url(images/videos2.jpg);
+	background-repeat:no-repeat;
+}
+
+  .videosf .coliz {
+	  float:left;
+	  width:379px;
+	  height: 580px;
+	           }
+   .videosf .coliz .v0 {
+	width: 358px;
+	height: 240px;
+	margin-left: 7px;
+	margin-top: 32px;
+	
+	           }
+
+   .videosf .coliz .v2 {
+	width: 358px;
+	height: 240px;
+	margin-left: 7px;
+	margin-top: 40px;
+	           }
+			   
+			   
+   .videosf .colder {
+	  float:right;
+	  width:379px;
+	  height: 580px;
+         }
+			   
+   .videosf .colder .v1 {
+	width: 356px;
+	height: 255px;
+	margin-left: 14px;
+	margin-top: 32px;
+	           }
+    .videosf .colder .v3 {
+	width: 356px;
+	height: 240px;
+	margin-left: 14px;
+	margin-top: 43px;
+	           }
+			   
+	.videosf .colder .paginacion{
+		font-family:Verdana, Geneva, sans-serif;
+		font-size:12px;
+		height:20px;
+		float:right;
+		margin-top:5px;
+		}
+			   
+.secundario{
+	float:right;
+	width:187px;
+	height:840px;
+	}
+
+
+    .secundario .cajon2 {
+	   width:187px;
+	   height:800px;
+       float:right;
+	   background-image:url(images/fondo_lateral.jpg);
+	   background-repeat:repeat-y;
+	   }
+	
+	
+	.secundario .cajon2 .botones {
+		  width: 187px;
+		  height: 40px;
+		  float:right;
+		  padding-top: 10px;
+		  background-color:#EEF3F4;
+		  text-align:right;}
+	
+	.secundario .cajon2 .adicional{
+		 
+		  
+		  width:137px;
+		  height:500px;
+		  padding-top:5px;
+		  padding-right:40px;
+		  padding-left:10px;
+		  
+		  /*padding: 5px 30px 5px 20px;*/
+		  margin-top: 60px;
+		  background-repeat:repeat-y;
+	  }
+	  
+	 .secundario .cajon2 .adicional2{
+		 
+		  height:500px;
+		  width:187px;
+		  margin-top: 60px;
+		  background-repeat:repeat-y;
+		  padding-left:1px;
+	  }
+	  
+	 .secundario .cajon2 .adicional .balazo{
+		  width:130px;
+		  height:1%;
+		  margin-top: 20px;
+		  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif, "Lucida Sans";
+		  font-weight:bold;
+		  font-size:10px;
+		  line-height:15px;
+		  letter-spacing:normal;
+		  text-align:left;
+		  color:#243a51;
+		  float:right;
+		  background-color:#FFF;
+		  background-repeat:no-repeat;
+		 }
+		 
+		      .secundario .cajon2 .adicional .balazo .balazoh{
+				   width:126px;
+				   height:27px;
+				   background-image:url(images/balazoh.jpg);}
+				   
+				   
+				   
+	 .secundario .cajon2 .adicional .balazo2{
+		  width:130px;
+		  height:1%;
+		  margin-top: 300px;
+		  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif, "Lucida Sans";
+		  font-weight:bold;
+		  font-size:10px;
+		  line-height:15px;
+		  letter-spacing:normal;
+		  text-align:left;
+		  color:#243a51;
+		  float:right;
+		  background-color:#FFF;
+		  background-repeat:no-repeat;
+		 }
+		 
+		      .secundario .cajon2 .adicional .balazo2 .balazoh2{
+				   width:126px;
+				   height:27px;
+				   background-image:url(images/balazoh.jpg);}			   
+	  
+.secundario .cajon4 {
+	width:187px;
+	height:40px;
+	float:right;
+	text-align:right;
+	}
+	
+	
+.cajon3 {
+	width:187px;
+	height:577px;
+	float:right;
+	 background-image:url(images/fondo_lateral2.jpg);
+	 background-repeat:no-repeat;
+	}
+	
+	
+
+	
+.botonest{
+	      width: 81px;
+		  height: 40px;
+		  float:right;
+		  padding-top: 10px;
+		  margin-left:80px;	
+	}
+	
+.taller{
+	      width: 100%;
+		  height: 20px;		  
+		  
+	}    
+	   						
+						
+	    
+
+.bloque1 {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:13px;
+	color:#666666;
+	float:left;
+	text-align:justify;
+	width: 600px;
+}
+		  
+	  .bloque1 .Titulo1 {
+		  color: #333333;
+		  letter-spacing:normal;
+		  /*line-height: 2px;*/
+		  text-align:left;
+		  font-size: 18px;
+		  font-weight: bold;
+		  display: block;
+	  }
+	  
+	  .bloque1 .Titulo2 {
+		  color: #666666;
+		  letter-spacing:normal;
+		  /*line-height: 2px;*/
+		  text-align:left;
+		  font-size:14px;
+		  font-weight: bold;
+		  display:block;
+		  }
+		  
+	  .bloque1 .Titulo3{
+		  
+		  color: #666666;
+		  letter-spacing: 0px;
+		  /*line-height: 0px;*/
+		  text-align:left;
+		  font-size:13px;
+		  font-weight: bold;
+		  display:block;
+		  
+		  
+		  }
+		  
+	  .bloque1 .Titulo4{
+		  
+		  color: #666666;
+		  letter-spacing: 4px;
+		  font-variant:small-caps;
+		  font-size:12px;
+		  font-weight:normal;
+		  display:block;	  
+		  
+		  }
+		  
+	  .bloque1 .Titulo5{
+		  color:#666666;
+		  letter-spacing:normal;
+		  font-style:italic;
+		  font-size:13px;
+		  padding-left:18px;
+		  }
+		  
+		  
+		   .bloque1 .pequenio{
+		  color:#666666;
+		  letter-spacing:normal;
+		  font-size:9px;
+		  text-align:right;
+		  }
+		  
+		  
+		    
+
+	  .bloque1 .cuerpo{
+		  color:#666666;
+		  font-style:normal;
+		  font-size:12px;
+		  line-height:20px;
+		  letter-spacing:0px;
+		  }	  	  
+	
+	  
+	  .bloque1 .italica{
+		  font-style:italic;		  
+	  }
+	  
+	  .bloque1 .bold{
+		  font-weight:bold;	  
+		  
+		  }
+		  
+	  .bloque1 .citas{
+		  color:#666666;
+		  font-style:normal;
+		  font-size: 9px;		  		  
+		  }
+	  
+	  
+	  
+		  
+		 .bloque1 .enfasis
+		 {
+		  font-weight:bold;	 
+		 }
+			  
+		 
+		  .bloque1 .comentario
+		  {
+		  background-color:#666666;
+		 }	
+		 
+		   .bloque1 .tabla{
+			   padding-left:50px;
+			   padding-top:5px;
+			   border: 1px double #CCC;
+		 }	
+		 
+		 
+		      .bloque1 .tabla .rotulo{
+			 width: 150px;
+			 height: 50px;
+			 float:center;
+			 padding: 3px 3px 6px 3px;
+			 margin-top: 10px;
+			 margin-bottom: 10px;
+			 text-align: center;
+			 font-size:10px;
+			 border:double;
+			 border-color:#666;
+			 border-color:#CCC;
+			 background-color:#FFF;
+			 z-index: 100;
+			 background-color:#FFDCB9;
+			 
+			 
+			 
+		 }
+		 
+		 .bloque1 .imagen{
+			 width:500px;
+			 text-align:center;
+			 /*padding: 10px 10px 10px 10px;*/
+			 padding-top:5px;
+			 padding-left:5px;
+			 padding-right:5px;
+			 margin-left:30px;
+			 border: 1px double #CCC;
+			 background-color:#FFF;
+			 	 
+			 
+		 }  
+		 
+		 
+		 
+		     .bloque1 .imagen .rotulo{
+			 width: 150px;
+			 height: 50px;
+			 float:center;
+			 padding: 3px 3px 6px 3px;
+			 margin-top: 10px;
+			 margin-bottom: 10px;
+			 text-align: center;
+			 font-size:10px;
+			 border:double;
+			 border-color:#666;
+			 border-color:#CCC;
+			 background-color:#FFF;
+			 z-index: 100;
+			 background-color:#FFDCB9;
+			 
+			 
+			 
+		 }
+		 
+		 
+		 
+		  .bloque1 .taller_enunciado{
+			 width: 300px;
+			 height: 60px;
+			 text-align:center;
+			 padding: 10px 10px 10px 10px;
+			 margin-left:130px;
+			 margin-top: 10px;
+			 border: 1px double #F8C792;
+			 background-color:#FFF;
+			 	 
+			 
+		 }  
+		 
+		 
+		   .bloque1 .taller_enunciado2{
+			 width: 150px;
+			 height: 60px;
+			 text-align:center;
+			 padding: 10px 10px 10px 10px;
+			 margin-left:400px;
+			 margin-top: 10px;
+			 border: 1px double  #06F;
+			 background-color:#FFF;
+			 	 
+			 
+		 }  
+		 
+		 
+		
+		 
+		 	    .bloque1 .imagen .rotulo{
+			 width: 150px;
+			 height: 50px;
+			 float:center;
+			 padding: 3px 3px 6px 3px;
+			 margin-top: 10px;
+			 margin-bottom: 10px;
+			 text-align: center;
+			 font-size:10px;
+			 border:double;
+			 border-color:#666;
+			 border-color:#CCC;
+			 background-color:#FFF;
+			 z-index: 100;
+			 background-color:#FFDCB9;
+			 
+			 
+			 
+		 }
+		 
+		 
+		    .bloque1 .error
+		   {
+		  background-color:#FFFF00;
+		  color:#FF0000;
+		 }	
+		 
+		    .bloque1 .contenido
+		   {
+			   width:316px;
+			   height:293px;
+			   background:url(images/contenido.jpg);
+			   padding-top: 40px;
+			   text-align:left;
+			   margin-left:80px;
+			   color:#8f6316;
+		
+		 	}	
+			
+			   .bloque1 .evaluacion
+		   {
+			   width:543px;
+			   height:443px;
+			   background:url(images/evaluaciones.jpg);
+			   padding-top: 30px;
+			   text-align:left;
+			   color:#8f6316;
+			   
+		
+		 	}	
+			
+			
+			       .bloque1 .evaluacion .ev1
+		      {
+			   width:250px;
+			   height:200px;
+			   color:#8f6316;
+			   padding-left:10px;
+			   float:left;
+			   text-align:center;
+		
+		 	   }	
+			   
+			         .bloque1 .evaluacion .ev2
+		      {
+			   width:260px;
+			   height:200px;
+			   color:#8f6316;
+			   float:right;
+			   text-align:center;
+			   
+		
+		 	   }
+			   
+			   
+			          .bloque1 .evaluacion .ev3
+		      {
+			   width:250px;
+			   height:200px;
+			   color:#8f6316;
+			   padding-left: 10px;
+			   padding-top: 5px;
+			   float:left;
+			   text-align:center;
+			   
+		
+		 	   }
+		 
+		 
+	
+
+.bloque1 .lista_numeros
+{
+	
+}
+
+.bloque1 .epigrafe
+{
+	background-color:#FF0000;
+}
+
+.bloque1 .video
+{
+	width: 500px;
+	height: 405px;
+	margin-left:30px;
+	margin-top:25px;
+	float:none;	
+}
+.bloque1 .aplicacion
+{
+	width: 500px;
+	height: 405px;
+	margin-top:25px;
+	float:none;	
+}

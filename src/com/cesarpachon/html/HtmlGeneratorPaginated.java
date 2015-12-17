@@ -93,7 +93,8 @@ public class HtmlGeneratorPaginated extends HtmlGenerator
 			 System.out.println("trying to close a non opened htmlGenerator!");
 			 return;
 		}
-		String templateContent = FileUtils.getFileContent(m_template_path);
+		System.out.println("HtmlGeneratorPaginated::close: loading template from file "+ m_template_path); 
+    String templateContent = FileUtils.getFileContent(m_template_path);
 		
 		String content = m_writer.toString();
 		templateContent = templateContent.replace("_CONTENT_", content);

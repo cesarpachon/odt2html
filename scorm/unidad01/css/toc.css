@@ -1,0 +1,45 @@
+body 
+{
+	/*height: 100%;*/
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Tahoma, Helvetica, Sans-Serif;
+	/*background:url(img/background.png) center #ffffff repeat;*/
+	text-align:left;
+	font-size: 12px;
+}
+
+div
+{
+	overflow:hidden;
+
+}
+
+
+.toc_level_0
+{
+	margin-left:6px;
+	text-align:left;
+	font-size: 12px;
+}
+
+.toc_level_1
+{
+	margin-left:12px;
+	text-align:left;
+	font-size: 11px;
+}
+
+.toc_level_2
+{
+	margin-left:18px;
+	text-align:left;
+	font-size: 10px;
+}
+
+.toc_level_3
+{
+	margin-left:24px;
+	text-align:left;
+	font-size: 9px;
+}
