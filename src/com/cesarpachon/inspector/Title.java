@@ -8,7 +8,7 @@ import java.util.LinkedList;
 
 import com.cesarpachon.html.HtmlGenerator;
 import com.cesarpachon.html.HtmlGeneratorSimple;
-import edu.co.virtualhumboldt.exception.IncompleteInformationException;
+import com.cesarpachon.exception.IncompleteInformationException;
 
 public class Title 
 {

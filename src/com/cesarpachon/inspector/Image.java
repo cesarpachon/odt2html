@@ -6,7 +6,7 @@ package com.cesarpachon.inspector;
 import java.io.IOException;
 
 import com.cesarpachon.html.HtmlGenerator;
-import edu.co.virtualhumboldt.exception.IncompleteInformationException;
+import com.cesarpachon.exception.IncompleteInformationException;
 
 public class Image 
 {

@@ -1,13 +1,13 @@
 /*
  * Created on 5/05/2010
  */
-package co.edu.virtualhumboldt.openoffice.spreadsheet;
+package com.cesarpachon.openoffice.spreadsheet;
 
 import java.util.HashMap;
 import java.util.LinkedList;
 
-import co.edu.virtualhumboldt.inspector.TextDocumentInspectorToSCORM;
-import co.edu.virtualhumboldt.openoffice.BaseOpenOfficeDocument;
+import com.cesarpachon.inspector.TextDocumentInspectorToSCORM;
+import com.cesarpachon.openoffice.BaseOpenOfficeDocument;
 
 import com.sun.star.beans.Property;
 import com.sun.star.beans.PropertyValue;

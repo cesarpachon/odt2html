@@ -6,7 +6,7 @@ package com.cesarpachon.html;
 import java.io.IOException;
 import java.io.Writer;
 
-import edu.co.virtualhumboldt.exception.IncompleteInformationException;
+import com.cesarpachon.exception.IncompleteInformationException;
 
 
 public abstract class HtmlGenerator

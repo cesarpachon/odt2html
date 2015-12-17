@@ -1,15 +1,15 @@
 /*
  * Created on 5/05/2010
  */
-package co.edu.virtualhumboldt.openoffice.textdocument;
+package com.cesarpachon.openoffice.textdocument;
 
 import java.util.HashMap;
 import java.util.LinkedList;
 
-import co.edu.virtualhumboldt.inspector.TextDocumentInspectorToSCORM;
-import co.edu.virtualhumboldt.openoffice.BaseOpenOfficeDocument;
-import co.edu.virtualhumboldt.openoffice.OpenOfficeUtils;
-import co.edu.virtualhumboldt.util.LogConsole;
+import com.cesarpachon.inspector.TextDocumentInspectorToSCORM;
+import com.cesarpachon.openoffice.BaseOpenOfficeDocument;
+import com.cesarpachon.openoffice.OpenOfficeUtils;
+import com.cesarpachon.util.LogConsole;
 
 import com.sun.star.beans.Property;
 import com.sun.star.beans.PropertyValue;

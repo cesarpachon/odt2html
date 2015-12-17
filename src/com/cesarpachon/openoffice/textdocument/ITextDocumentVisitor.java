@@ -1,7 +1,7 @@
 /*
  * Created on 6/05/2010
  */
-package co.edu.virtualhumboldt.openoffice.textdocument;
+package com.cesarpachon.openoffice.textdocument;
 
 import java.io.IOException;
 import java.util.Collection;
@@ -9,7 +9,7 @@ import java.util.Collection;
 import com.sun.star.graphic.XGraphic;
 import com.sun.star.style.XStyle;
 
-import edu.co.virtualhumboldt.exception.IncompleteInformationException;
+import com.cesarpachon.exception.IncompleteInformationException;
 
 public interface ITextDocumentVisitor 
 {

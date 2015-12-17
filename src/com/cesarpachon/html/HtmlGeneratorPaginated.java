@@ -9,7 +9,7 @@ import java.io.Writer;
 
 import com.cesarpachon.util.FileUtils;
 import com.cesarpachon.util.StringUtils;
-import edu.co.virtualhumboldt.exception.IncompleteInformationException;
+import com.cesarpachon.exception.IncompleteInformationException;
 
 
 /*

@@ -1,7 +1,7 @@
 /*
  * Created on 21/05/2010
  */
-package co.edu.virtualhumboldt.openoffice.textdocument;
+package com.cesarpachon.openoffice.textdocument;
 
 /*
  * this is a block of text who has the same style. 

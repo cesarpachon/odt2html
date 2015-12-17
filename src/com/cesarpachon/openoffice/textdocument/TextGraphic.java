@@ -1,4 +1,4 @@
-package co.edu.virtualhumboldt.openoffice.textdocument;
+package com.cesarpachon.openoffice.textdocument;
 
 import com.sun.star.beans.UnknownPropertyException;
 import com.sun.star.beans.XPropertySet;

@@ -16,14 +16,13 @@ import com.cesarpachon.services.RepositoryTO;
 import com.cesarpachon.util.FileUtils;
 import com.cesarpachon.util.LogConsole;
 import com.cesarpachon.util.StringUtils;
-import com.cesarpachon.yahoo.YahooWebEngine;
 
 import com.sun.star.beans.XPropertySet;
 import com.sun.star.graphic.XGraphic;
 import com.sun.star.style.XStyle;
 import com.sun.star.uno.UnoRuntime;
 
-import edu.co.virtualhumboldt.exception.IncompleteInformationException;
+import com.cesarpachon.exception.IncompleteInformationException;
 
 public class TextDocumentInspectorToSCORM extends TextDocumentInspectorBase 
 {
@@ -592,9 +591,7 @@ public class TextDocumentInspectorToSCORM extends TextDocumentInspectorBase
 			String sentence = sentences[i];
 			if(sentence.length()<100) break;
 			
-			//oki, perform a yahoo! search! 
-			YahooWebEngine.search(content, m_htmlErrorReporter);
-		}
+  	}
 	}
 	//-------------------------------------------
 	
