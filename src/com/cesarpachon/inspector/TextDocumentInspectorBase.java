@@ -119,6 +119,7 @@ public abstract class TextDocumentInspectorBase implements ITextDocumentVisitor
 				//titulo del documento
 			g_validCharStylesNames.put("Intense Emphasis", "enfasis");
 			g_validCharStylesNames.put("Emphasis", "enfasis");
+			g_validCharStylesNames.put("Énfasis intenso", "enfasis");
 			g_validCharStylesNames.put("enfasis intenso", "enfasis");
 			g_validCharStylesNames.put("enfasis sutil", "enfasis");
 			g_validCharStylesNames.put("italica", "italica");

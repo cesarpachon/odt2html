@@ -12,7 +12,6 @@ import com.cesarpachon.html.HtmlGeneratorSimple;
 import com.cesarpachon.openoffice.textdocument.TextDocument;
 import com.cesarpachon.openoffice.textdocument.TextGraphic;
 import com.cesarpachon.openoffice.textdocument.TextPortion;
-import com.cesarpachon.services.RepositoryTO;
 import com.cesarpachon.util.FileUtils;
 import com.cesarpachon.util.LogConsole;
 import com.cesarpachon.util.StringUtils;
@@ -27,54 +26,31 @@ import com.cesarpachon.exception.IncompleteInformationException;
 public class TextDocumentInspectorToSCORM extends TextDocumentInspectorBase 
 {
 
-	
-	
+  public static String OUTPUT_PATH = "/home/cesar/Projects/odt2html/output/";
+  public static String TEMPLATE_PATH = "/home/cesar/Projects/odt2html/templates/";
+
 	TextDocument m_document;
 	HtmlGeneratorSimple m_htmlErrorReporter;
 	HtmlGeneratorPaginated m_htmlContent;
-	
 		
 	Title m_root;
 	Title m_current_title;
 	Title m_last_added_title;
 	
-	
 	//pagination manager
 	int m_currPage = 1;
 	String m_currPageName = "content.html";
-
 	
 	private String m_pageprefix;
-
-
 	private String m_images_subdirectory;
-
 	private String m_imageprefix;
-
 	
-	private RepositoryTO m_repository;
-	
-	public TextDocumentInspectorToSCORM(TextDocument document, 
-			RepositoryTO repository
-			/*HtmlGeneratorSimple errorReporter, 
-			String contentDirectory,  String imagesSubDirectory,
-			String template_path,String toc_path,  String index_path,
-			String pageprefix, String imageprefix, String unitid*/)
+	public TextDocumentInspectorToSCORM(TextDocument document)
 	{
-		
-		m_repository = repository;
-		
-		/*String imagesSubDirectory = "\\img\\";
-		String index_path = m_repository.getIndexPath();
-		String errorReport = m_repository.getErrorReportPath();
-		String contentDirectory = m_repository.getScormDirectoryUnidad();
-		String manifest_file= m_repository.getManifestTemplateUnidad();
-		*/
-		
 		
 		m_currPage = -1; 
 		m_document = document;
-		m_htmlErrorReporter = new HtmlGeneratorSimple("Reporte de errores", m_repository.getErrorReportPath());
+		m_htmlErrorReporter = new HtmlGeneratorSimple("Reporte de errores", OUTPUT_PATH + "inspection.html");
 
 		m_images_subdirectory = "/img/";
 		m_pageprefix = "content";
@@ -187,7 +163,7 @@ public class TextDocumentInspectorToSCORM extends TextDocumentInspectorBase
 	{
 		
 		//openPage();
-		m_htmlContent = new HtmlGeneratorPaginated("Contenido generado", m_repository.getTemplatePath(), m_repository.getScormDirectoryUnidad());
+		m_htmlContent = new HtmlGeneratorPaginated("Contenido generado", TEMPLATE_PATH + "content.html", OUTPUT_PATH);
 		//m_htmlContent.open();
 		//m_htmlContent.openDiv("bloque1");
 		
@@ -213,8 +189,8 @@ public class TextDocumentInspectorToSCORM extends TextDocumentInspectorBase
 		}
 		
 		//open the toc template, and fill it with the structure.
-		LogConsole.getInstance().log("beginContentGeneration: openning m_toc_path: "+ m_repository.getTocPath());
-		String toc_template = FileUtils.getFileContent(m_repository.getTocPath());
+		LogConsole.getInstance().log("beginContentGeneration: openning m_toc_path ");
+		String toc_template = FileUtils.getFileContent(TEMPLATE_PATH + "toc.html");
 		
 
 		String toc_text = m_root.getTableOfContents();
@@ -226,17 +202,14 @@ public class TextDocumentInspectorToSCORM extends TextDocumentInspectorBase
 		//toc_text = StringUtils.replaceHTMLQuotes(toc_text);
 		toc_template = toc_template.replaceAll("_TOCJS_", toc_text);
 		
-		
-		FileUtils.saveToFile(toc_template, m_repository.getScormDirectoryUnidad() + "toc.html");
-		
+		FileUtils.saveToFile(toc_template, OUTPUT_PATH + "toc.html");
 		
 		//open the index_template, replace the token words and create a new index.html file
-		LogConsole.getInstance().log("beginContentGeneration: openning m_index_path: "+ m_repository.getIndexPath());
-		String index_text = FileUtils.getFileContent(m_repository.getIndexPath());
+		LogConsole.getInstance().log("beginContentGeneration: openning m_index_path ");
+		String index_text = FileUtils.getFileContent(TEMPLATE_PATH + "index.html");
 		index_text = index_text.replace("_CONTENT_NUM_PAGES_", m_htmlContent.getNumPages()-1+"");
-		index_text = index_text.replace("_UNIT_ID_", m_repository.getCurrentUnit());
 		index_text = StringUtils.replaceHTMLQuotes(index_text);
-		FileUtils.saveToFile(index_text, m_repository.getScormDirectoryUnidad() + "index.html");
+		FileUtils.saveToFile(index_text, OUTPUT_PATH +  "index.html");
 		
 		exportTablesPagesAndPics();
 		
@@ -251,7 +224,7 @@ public class TextDocumentInspectorToSCORM extends TextDocumentInspectorBase
 	 * and also it will export a tableID.png pic. 
 	 */
 	private void exportTablesPagesAndPics() throws Exception
-	{
+	{/*
 		for(Table table:m_tables.values())
 		{
 			LogConsole.getInstance().log("exporting table " + table.getNumber());
@@ -263,7 +236,7 @@ public class TextDocumentInspectorToSCORM extends TextDocumentInspectorBase
 			doc.exportAsHTML(m_repository.getUrlTableHtml(table.getNumber()));
 			
 			doc.close();
-		}
+		}*/
 	}
 	//-----------------
 	
@@ -344,7 +317,7 @@ public class TextDocumentInspectorToSCORM extends TextDocumentInspectorBase
 			
 			System.out.println("UGLY HACK!! parsing the string to extract image id..");
 			String content = portion.getContent();
-			if(content.startsWith("Imagen "))
+			if(content.startsWith("Imagen ") || content.startsWith("Figura "))
 			{
 				int index = content.indexOf(":");
 				if(index > -1)
@@ -353,7 +326,9 @@ public class TextDocumentInspectorToSCORM extends TextDocumentInspectorBase
 					String id = content.substring(7, index);
 					onImage("Imagen", id, title);
 				}
-			}
+			}else{
+        System.out.println("content does not starts With 'Imagen' or 'Figura':"+ content); 
+      }
 			
 			/*
 			m_htmlContent.openDiv("error");
@@ -459,7 +434,7 @@ public class TextDocumentInspectorToSCORM extends TextDocumentInspectorBase
 	private void onImage(String rotule, String number, String title) throws Exception
 	{
 		
-		XPropertySet xPropSet = m_document.exportImage(number, this.m_repository.getScormDirectoryUnidad() + m_images_subdirectory, m_imageprefix);
+		XPropertySet xPropSet = m_document.exportImage(number, OUTPUT_PATH + m_images_subdirectory, m_imageprefix);
 		
 		Integer widthmm = (Integer)xPropSet.getPropertyValue("Width");
 		Integer heightmm = (Integer)xPropSet.getPropertyValue("Height");
@@ -602,10 +577,7 @@ public class TextDocumentInspectorToSCORM extends TextDocumentInspectorBase
 		
 		try {
 			
-			
-			
-			m_document.exportGraphicToLocalFile(graphic.getXGraphic(), m_repository.getScormDirectoryUnidad() + m_images_subdirectory+ graphic.getName()+".jpg");
-			
+			m_document.exportGraphicToLocalFile(graphic.getXGraphic(), OUTPUT_PATH + m_images_subdirectory+ graphic.getName()+".jpg");
 			
 			Integer widthmm = graphic.getWidth();
 			Integer heightmm = graphic.getHeight();
@@ -707,7 +679,12 @@ public class TextDocumentInspectorToSCORM extends TextDocumentInspectorBase
 			{
 				onTable(portions);
 			}
-			else if("Epígrafe".equals(styleName) || "Imagen".equals(styleName) || "Image".equals(styleName))
+			else if("Epígrafe".equals(styleName)
+          || "Imagen".equals(styleName) 
+          || "Image".equals(styleName)
+          || "Figura".equals(styleName)
+          || "Ilustración".equals(styleName)
+          )
 			{
 				//documento de word. puede ser una tabla o una imagen..
 				onWordTableOrImage(portions);

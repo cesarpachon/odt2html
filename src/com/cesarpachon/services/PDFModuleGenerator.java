@@ -33,8 +33,10 @@ public class PDFModuleGenerator
 	 * repositoryTO must have been set to a workable current unit
 	 * @throws Exception 
 	 */
-	public void execute(RepositoryTO repository) throws Exception
+	public void execute() throws Exception
 	{
+    throw new UnsupportedOperationException(); 
+    /*
 		LogConsole.getInstance().log("PDFModuleGenerator: iniciando");
 		
 		LogConsole.getInstance().log("abriendo documento fuente..");
@@ -48,7 +50,7 @@ public class PDFModuleGenerator
 		LogConsole.getInstance().log("pasando contenido a plantilla..");
 		TextDocumentInspectorToODT inspector = new TextDocumentInspectorToODT(m_docsource, m_doctemplate);
 		inspector.beginInspection();
-		
+		*/
 		
 
 	}
