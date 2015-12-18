@@ -114,7 +114,7 @@ public class RepositoryTO
 	 */
 	public String getScormDirectoryUnidad() 
 	{
-		return 	m_scormDirectory + "/unidad" + m_currUnit+"/";
+		return 	m_scormDirectory + /*"/unidad" + m_currUnit+*/"/";
 	}
 	//---------------------------------------
 

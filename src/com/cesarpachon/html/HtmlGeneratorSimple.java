@@ -36,12 +36,12 @@ public class HtmlGeneratorSimple extends HtmlGenerator
 	public void open() throws IOException
 	{
 		m_writer = new BufferedWriter(new FileWriter(new File(m_path)));	
-		m_writer.write("<html>\n");
-		m_writer.write("<header>\n");
-		m_writer.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charsetISO 8859-1\" />\n");
-		m_writer.write("<link href=\"file:///C://repositorios/referencia/implementacion/scorm/style.css\" rel=\"stylesheet\" type=\"text/css\" />\n");
 
-		m_writer.write("</header>\n");
+		m_writer.write("<!DOCTYPE html>\n<html>\n");
+		m_writer.write("<head>\n");
+		m_writer.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n");
+
+		m_writer.write("</head>\n");
 		m_writer.write("<body>\n");
 	}
 	//------------------------------
